@@ -56,6 +56,9 @@ export const Page: React.FC = () => {
         </p>
         <div>
           <span>I am a random section</span>
+          <div>
+            <p>With some nested content</p>
+          </div>
         </div>
         <div className="tip-wrapper">
           <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
