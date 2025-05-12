@@ -59,6 +59,7 @@ export const Page: React.FC = () => {
           <div>
             <p>With some nested content</p>
             <p>And some more</p>
+            <p>And some more 2</p>
           </div>
         </div>
         <div className="tip-wrapper">
