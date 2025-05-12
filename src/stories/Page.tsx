@@ -60,6 +60,7 @@ export const Page: React.FC = () => {
             <p>With some nested content</p>
             <p>And some more</p>
             <p>And some more 2</p>
+            <p>And some more 3</p>
           </div>
         </div>
         <div className="tip-wrapper">
