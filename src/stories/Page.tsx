@@ -58,6 +58,7 @@ export const Page: React.FC = () => {
           <span>I am a random section</span>
           <div>
             <p>With some nested content</p>
+            <p>And some more</p>
           </div>
         </div>
         <div className="tip-wrapper">
