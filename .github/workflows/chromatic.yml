@@ -7,7 +7,7 @@ jobs:
     name: Run Chromatic
     runs-on: ubuntu-latest
     env:
-      CHROMATIC_INDEX_URL: https://chromatic-www-pr-9904.herokuapp.com
+      CHROMATIC_INDEX_URL: https://www.staging-chromatic.com
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
