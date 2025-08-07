@@ -55,8 +55,8 @@ importers:
         specifier: ^4.3.3
         version: 4.4.1(vite@5.4.19)
       chromatic:
-        specifier: ^11.18.0
-        version: 11.28.2
+        specifier: ^13.1.2
+        version: 13.1.2
       eslint:
         specifier: ^9.13.0
         version: 9.25.1
@@ -1115,6 +1115,18 @@ packages:
 
   chromatic@11.28.2:
     resolution: {integrity: sha512-aCmUPcZUs4/p9zRZdMreOoO/5JqO2DiJC3md1/vRx8dlMRcmR/YI5ZbgXZcai2absVR+6hsXZ5XiPxV2sboTuQ==}
+    hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
+
+  chromatic@13.1.2:
+    resolution: {integrity: sha512-jgVptQabJHOnzmmvLjbtfutREkWGhDDk2gVqMH6N+V7z56oIy4Sd2/U7ZxNvnVFPinZQMSjSdUce4b6JIP64Dg==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -3003,6 +3015,8 @@ snapshots:
   check-error@2.1.1: {}
 
   chromatic@11.28.2: {}
+
+  chromatic@13.1.2: {}
 
   color-convert@2.0.1:
     dependencies:
