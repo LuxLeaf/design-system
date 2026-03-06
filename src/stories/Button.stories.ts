@@ -39,6 +39,7 @@ export const Secondary: Story = {
 };
 
 export const SecondaryOAuthButton: Story = {
+  name: 'Secondary OAuth Button',
   args: {
     label: 'OAuth Button',
   },
