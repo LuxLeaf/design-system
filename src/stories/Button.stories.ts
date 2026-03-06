@@ -38,11 +38,11 @@ export const Secondary: Story = {
   },
 };
 
-export const OAuthButton: Story = {
-  args: {
-    label: 'OAuth Button',
-  },
-};
+// export const OAuthButton: Story = {
+//   args: {
+//     label: 'OAuth Button',
+//   },
+// };
 
 export const SecondaryOAuthButton: Story = {
   args: {
