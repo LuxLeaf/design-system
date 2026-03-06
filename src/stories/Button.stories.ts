@@ -38,6 +38,12 @@ export const Secondary: Story = {
   },
 };
 
+export const SecondaryOAuthButton: Story = {
+  args: {
+    label: 'OAuth Button',
+  },
+};
+
 export const Large: Story = {
   args: {
     size: 'large',
