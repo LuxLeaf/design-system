@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@storybook/addon-mcp':
+        specifier: ^0.3.4
+        version: 0.3.4(storybook@8.6.12)(typescript@5.6.3)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -691,6 +694,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
+
   '@storybook/addon-a11y@8.6.12':
     resolution: {integrity: sha512-H28zHiL8uuv29XsVNf9VjNWsCeht/l66GPYHT7aom1jh+f3fS9+sutrCGEBC/T7cnRpy8ZyuHCtihUqS+RI4pg==}
     peerDependencies:
@@ -730,6 +736,15 @@ packages:
     resolution: {integrity: sha512-cTAJlTq6uVZBEbtwdXkXoPQ4jHOAGKQnYSezBT4pfNkdjn/FnEeaQhMBDzf14h2wr5OgBnJa6Lmd8LD9ficz4A==}
     peerDependencies:
       storybook: ^8.6.12
+
+  '@storybook/addon-mcp@0.3.4':
+    resolution: {integrity: sha512-d01mKM4Fc/wNcxWOdwc1kTIZNRGvZso2MiwVpmQS83myuFDMFkSQZq/QpkPOcQx2XqQqawuY/k/yxe5e+WD0DQ==}
+    peerDependencies:
+      '@storybook/addon-vitest': ^9.1.16 || ^10.0.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0
+      storybook: ^9.1.16 || ^10.0.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0
+    peerDependenciesMeta:
+      '@storybook/addon-vitest':
+        optional: true
 
   '@storybook/addon-measure@8.6.12':
     resolution: {integrity: sha512-tACmwqqOvutaQSduw8SMb62wICaT1rWaHtMN3vtWXuxgDPSdJQxLP+wdVyRYMAgpxhLyIO7YRf++Hfha9RHgFg==}
@@ -815,6 +830,9 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
+  '@storybook/mcp@0.5.1':
+    resolution: {integrity: sha512-Sa9nrvnzI6y+dJ63cc1krZmeLjUGqvgGRaBsccBUja4cm5/jxIau20CM61MCX1jg9I7FzrwnnXSmifw2LtT+Cg==}
+
   '@storybook/preview-api@8.6.12':
     resolution: {integrity: sha512-84FE3Hrs0AYKHqpDZOwx1S/ffOfxBdL65lhCoeI8GoWwCkzwa9zEP3kvXBo/BnEDO7nAfxvMhjASTZXbKRJh5Q==}
     peerDependencies:
@@ -878,6 +896,26 @@ packages:
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
+
+  '@tmcp/adapter-valibot@0.1.5':
+    resolution: {integrity: sha512-9P2wrVYPngemNK0UvPb/opC722/jfd09QxXmme1TRp/wPsl98vpSk/MXt24BCMqBRv4Dvs0xxJH4KHDcjXW52Q==}
+    peerDependencies:
+      tmcp: ^1.17.0
+      valibot: ^1.1.0
+
+  '@tmcp/session-manager@0.2.1':
+    resolution: {integrity: sha512-DOGy9LfufXCy1wfpGHZ6qPSDQtRnTVwOb71+41ffovTqzLMZlK3iLK/LIsekHxIiku+iIAUiqEKN+DHbqEm8IA==}
+    peerDependencies:
+      tmcp: ^1.16.3
+
+  '@tmcp/transport-http@0.8.5':
+    resolution: {integrity: sha512-qQLqiCTtbxtTSswqOn/782df7O57RxI/yLUtCDQ++kHEhbmDUc8glmmtGJ3mrb7yPSPoM5VF2Pc2Q5cA6quzLA==}
+    peerDependencies:
+      '@tmcp/auth': ^0.3.3 || ^0.4.0
+      tmcp: ^1.18.0
+    peerDependenciesMeta:
+      '@tmcp/auth':
+        optional: true
 
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -969,6 +1007,11 @@ packages:
   '@typescript-eslint/visitor-keys@8.31.1':
     resolution: {integrity: sha512-I+/rgqOVBn6f0o7NDTmAPWWC6NuqhV174lfYvAm9fUaWeiefLdux9/YI3/nLugEn9L8fcSi0XmpKi/r5u0nmpw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@valibot/to-json-schema@1.5.0':
+    resolution: {integrity: sha512-GE7DmSr1C2UCWPiV0upRH6mv0cCPsqYGs819fb6srCS1tWhyXrkGGe+zxUiwzn/L1BOfADH4sNjY/YHCuP8phQ==}
+    peerDependencies:
+      valibot: ^1.2.0
 
   '@vitejs/plugin-react@4.4.1':
     resolution: {integrity: sha512-IpEm5ZmeXAP/osiBXVVP5KjFMzbWOonMs0NaQQl+xYnUAcq4oHUBsF2+p4MgKWG4YMmFYJU8A6sxRPuowllm6w==}
@@ -1288,6 +1331,9 @@ packages:
       jiti:
         optional: true
 
+  esm-env@1.2.2:
+    resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
+
   espree@10.3.0:
     resolution: {integrity: sha512-0QYC8b24HWY8zjRnDTL6RiHfDbAWn63qb4LMj1Z4b076A4une81+z03Kg7l7mn/48PUTqoLptSXez8oknU8Clg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1532,6 +1578,9 @@ packages:
   json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
 
+  json-rpc-2.0@1.7.1:
+    resolution: {integrity: sha512-JqZjhjAanbpkXIzFE7u8mE/iFblawwlXtONaCvRqI+pyABVz7B4M1EUNpyVW+dZjqgQ2L5HFmZCmOCgUKm00hg==}
+
   json-schema-traverse@0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
 
@@ -1690,6 +1739,9 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
+  picoquery@2.5.0:
+    resolution: {integrity: sha512-j1kgOFxtaCyoFCkpoYG2Oj3OdGakadO7HZ7o5CqyRazlmBekKhbDoUnNnXASE07xSY4nDImWZkrZv7toSxMi/g==}
+
   polished@4.3.1:
     resolution: {integrity: sha512-OBatVyC/N7SCW/FaDHrSd+vn0o5cS855TOmYi4OkdWUMSJCET/xip//ch8xGUvtr3i44X9LVyWwQlRMTN3pwSA==}
     engines: {node: '>=10'}
@@ -1821,6 +1873,9 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
+  sqids@0.3.0:
+    resolution: {integrity: sha512-lOQK1ucVg+W6n3FhRwwSeUijxe93b51Bfz5PMRMihVf1iVkl82ePQG7V5vwrhzB11v0NtsR25PSZRGiSomJaJw==}
+
   storybook@8.6.12:
     resolution: {integrity: sha512-Z/nWYEHBTLK1ZBtAWdhxC0l5zf7ioJ7G4+zYqtTdYeb67gTnxNj80gehf8o8QY9L2zA2+eyMRGLC2V5fI7Z3Tw==}
     hasBin: true
@@ -1880,6 +1935,9 @@ packages:
   tinyspy@3.0.2:
     resolution: {integrity: sha512-n1cw8k1k0x4pgA2+9XrOkFydTerNcJ1zWCO5Nn9scWHTD+5tp8dghT2x1uduQePZTZgd3Tupf+x9BxJjeJi77Q==}
     engines: {node: '>=14.0.0'}
+
+  tmcp@1.19.3:
+    resolution: {integrity: sha512-plz/TLKNFrdfQN32LjCTN6ULy6pynfGPgHcU7KGCI5dBrxQ9Mub99SmcYuzxEkLjJooQuOD3gosSwZEl1htOtw==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -1942,12 +2000,23 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  uri-template-matcher@1.1.2:
+    resolution: {integrity: sha512-uZc1h12jdO3m/R77SfTEOuo6VbMhgWznaawKpBjRGSJb7i91x5PgI37NQJtG+Cerxkk0yr1pylBY2qG1kQ+aEQ==}
+
   util@0.12.5:
     resolution: {integrity: sha512-kZf/K6hEIrWHI6XqOFUiiMa+79wE/D8Q+NCNAWclkyg3b4d2k7s0QGepNjiABc+aR3N1PAyHL7p6UcLY6LmrnA==}
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
+
+  valibot@1.2.0:
+    resolution: {integrity: sha512-mm1rxUsmOxzrwnX5arGS+U4T25RdvpPjPN4yR0u9pUBov9+zGVtO84tif1eY4r6zWxVxu3KzIyknJy3rxfRZZg==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   vite@5.4.19:
     resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
@@ -2482,6 +2551,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.40.1':
     optional: true
 
+  '@standard-schema/spec@1.1.0': {}
+
   '@storybook/addon-a11y@8.6.12(storybook@8.6.12)':
     dependencies:
       '@storybook/addon-highlight': 8.6.12(storybook@8.6.12)
@@ -2555,6 +2626,19 @@ snapshots:
       polished: 4.3.1
       storybook: 8.6.12
       ts-dedent: 2.2.0
+
+  '@storybook/addon-mcp@0.3.4(storybook@8.6.12)(typescript@5.6.3)':
+    dependencies:
+      '@storybook/mcp': 0.5.1(typescript@5.6.3)
+      '@tmcp/adapter-valibot': 0.1.5(tmcp@1.19.3(typescript@5.6.3))(valibot@1.2.0(typescript@5.6.3))
+      '@tmcp/transport-http': 0.8.5(tmcp@1.19.3(typescript@5.6.3))
+      picoquery: 2.5.0
+      storybook: 8.6.12
+      tmcp: 1.19.3(typescript@5.6.3)
+      valibot: 1.2.0(typescript@5.6.3)
+    transitivePeerDependencies:
+      - '@tmcp/auth'
+      - typescript
 
   '@storybook/addon-measure@8.6.12(storybook@8.6.12)':
     dependencies:
@@ -2647,6 +2731,16 @@ snapshots:
     dependencies:
       storybook: 8.6.12
 
+  '@storybook/mcp@0.5.1(typescript@5.6.3)':
+    dependencies:
+      '@tmcp/adapter-valibot': 0.1.5(tmcp@1.19.3(typescript@5.6.3))(valibot@1.2.0(typescript@5.6.3))
+      '@tmcp/transport-http': 0.8.5(tmcp@1.19.3(typescript@5.6.3))
+      tmcp: 1.19.3(typescript@5.6.3)
+      valibot: 1.2.0(typescript@5.6.3)
+    transitivePeerDependencies:
+      - '@tmcp/auth'
+      - typescript
+
   '@storybook/preview-api@8.6.12(storybook@8.6.12)':
     dependencies:
       storybook: 8.6.12
@@ -2733,6 +2827,23 @@ snapshots:
   '@testing-library/user-event@14.5.2(@testing-library/dom@10.4.0)':
     dependencies:
       '@testing-library/dom': 10.4.0
+
+  '@tmcp/adapter-valibot@0.1.5(tmcp@1.19.3(typescript@5.6.3))(valibot@1.2.0(typescript@5.6.3))':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      '@valibot/to-json-schema': 1.5.0(valibot@1.2.0(typescript@5.6.3))
+      tmcp: 1.19.3(typescript@5.6.3)
+      valibot: 1.2.0(typescript@5.6.3)
+
+  '@tmcp/session-manager@0.2.1(tmcp@1.19.3(typescript@5.6.3))':
+    dependencies:
+      tmcp: 1.19.3(typescript@5.6.3)
+
+  '@tmcp/transport-http@0.8.5(tmcp@1.19.3(typescript@5.6.3))':
+    dependencies:
+      '@tmcp/session-manager': 0.2.1(tmcp@1.19.3(typescript@5.6.3))
+      esm-env: 1.2.2
+      tmcp: 1.19.3(typescript@5.6.3)
 
   '@types/aria-query@5.0.4': {}
 
@@ -2856,6 +2967,10 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.31.1
       eslint-visitor-keys: 4.2.0
+
+  '@valibot/to-json-schema@1.5.0(valibot@1.2.0(typescript@5.6.3))':
+    dependencies:
+      valibot: 1.2.0(typescript@5.6.3)
 
   '@vitejs/plugin-react@4.4.1(vite@5.4.19)':
     dependencies:
@@ -3218,6 +3333,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  esm-env@1.2.2: {}
+
   espree@10.3.0:
     dependencies:
       acorn: 8.14.1
@@ -3442,6 +3559,8 @@ snapshots:
 
   json-buffer@3.0.1: {}
 
+  json-rpc-2.0@1.7.1: {}
+
   json-schema-traverse@0.4.1: {}
 
   json-stable-stringify-without-jsonify@1.0.1: {}
@@ -3577,6 +3696,8 @@ snapshots:
   picomatch@2.3.1: {}
 
   picomatch@4.0.2: {}
+
+  picoquery@2.5.0: {}
 
   polished@4.3.1:
     dependencies:
@@ -3730,6 +3851,8 @@ snapshots:
 
   source-map@0.6.1: {}
 
+  sqids@0.3.0: {}
+
   storybook@8.6.12:
     dependencies:
       '@storybook/core': 8.6.12(storybook@8.6.12)
@@ -3781,6 +3904,16 @@ snapshots:
   tinyrainbow@1.2.0: {}
 
   tinyspy@3.0.2: {}
+
+  tmcp@1.19.3(typescript@5.6.3):
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      json-rpc-2.0: 1.7.1
+      sqids: 0.3.0
+      uri-template-matcher: 1.1.2
+      valibot: 1.2.0(typescript@5.6.3)
+    transitivePeerDependencies:
+      - typescript
 
   to-regex-range@5.0.1:
     dependencies:
@@ -3837,6 +3970,8 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+  uri-template-matcher@1.1.2: {}
+
   util@0.12.5:
     dependencies:
       inherits: 2.0.4
@@ -3846,6 +3981,10 @@ snapshots:
       which-typed-array: 1.1.19
 
   uuid@9.0.1: {}
+
+  valibot@1.2.0(typescript@5.6.3):
+    optionalDependencies:
+      typescript: 5.6.3
 
   vite@5.4.19:
     dependencies:
