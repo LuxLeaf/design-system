@@ -4,9 +4,7 @@ const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@storybook/addon-onboarding",
-    "@storybook/addon-essentials",
     "@chromatic-com/storybook",
-    "@storybook/addon-interactions",
     "@storybook/addon-a11y",
     {
 			name: '@storybook/addon-mcp',
@@ -17,6 +15,7 @@ const config: StorybookConfig = {
 				},
 			},
 		},
+    "@storybook/addon-docs"
   ],
   framework: {
     name: "@storybook/react-vite",
