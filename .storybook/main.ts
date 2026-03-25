@@ -7,19 +7,23 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-a11y",
     {
-			name: '@storybook/addon-mcp',
-			options: {
-				toolsets: {
-					dev: true, // Tools for story URL retrieval and UI building instructions (default: true)
-					docs: true, // Tools for component manifest and documentation (default: true)
-				},
-			},
-		},
-    "@storybook/addon-docs"
+      name: "@storybook/addon-mcp",
+      options: {
+        toolsets: {
+          dev: true,
+          docs: true,
+        },
+      },
+    },
+    "@storybook/addon-docs",
+    "@storybook/addon-vitest"
   ],
   framework: {
     name: "@storybook/react-vite",
     options: {},
+  },
+  features: {
+    componentsManifest: true,
   },
 };
 export default config;
