@@ -1,0 +1,13 @@
+diff --git a/dist/_node-chunks/chunk-YEI2VLDL.js b/dist/_node-chunks/chunk-YEI2VLDL.js
+index 407f8b92c87e0c9e11c2347a6b952d1fefb7d1c2..fd1c94f872551a4c80777a5d59d8a68f77da3cf2 100644
+--- a/dist/_node-chunks/chunk-YEI2VLDL.js
++++ b/dist/_node-chunks/chunk-YEI2VLDL.js
+@@ -373,7 +373,7 @@ async function generateProjectAnnotationsCode(options, projectRoot) {
+   });
+ }
+ function generateProjectAnnotationsCodeFromPreviews(options) {
+-  let { projectRoot } = options, previewAnnotationURLs = options.previewAnnotations.filter((path2) => path2 !== void 0).map((path2) => processPreviewAnnotation(path2, projectRoot)), variables = [], imports = [];
++  let { projectRoot } = options, previewAnnotationURLs = [...new Set(options.previewAnnotations.filter((path2) => path2 !== void 0).map((path2) => processPreviewAnnotation(path2, projectRoot)))], variables = [], imports = [];
+   for (let previewAnnotation of previewAnnotationURLs) {
+     let variable = genSafeVariableName(filename(previewAnnotation)).replace(/_(45|46|47)/g, "_") + "_" + hash(previewAnnotation);
+     variables.push(variable), imports.push(genImport(previewAnnotation, { name: "*", as: variable }));
