@@ -1253,15 +1253,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mcp@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "@storybook/addon-mcp@npm:0.4.2"
+"@storybook/addon-mcp@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@storybook/addon-mcp@npm:0.5.0"
   dependencies:
-    "@storybook/mcp": "npm:0.6.1"
-    "@tmcp/adapter-valibot": "npm:^0.1.4"
-    "@tmcp/transport-http": "npm:^0.8.0"
+    "@storybook/mcp": "npm:0.6.2"
+    "@tmcp/adapter-valibot": "npm:^0.1.5"
+    "@tmcp/transport-http": "npm:^0.8.5"
     picoquery: "npm:^2.5.0"
-    tmcp: "npm:^1.16.0"
+    tmcp: "npm:^1.19.3"
     valibot: "npm:1.2.0"
   peerDependencies:
     "@storybook/addon-vitest": ^9.1.16 || ^10.0.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0
@@ -1269,7 +1269,7 @@ __metadata:
   peerDependenciesMeta:
     "@storybook/addon-vitest":
       optional: true
-  checksum: 10c0/065ca0f4e143b5c8d1a54c93d87296cb41fbf426bbef13a45f3f9403d5c29d525ad1d5996b8c9a462582965e447f16a51c6cf9dea0c9bf3ea58c14ce86696319
+  checksum: 10c0/a2cce905a66bc46048b47a19f0409c17dc6fd517ca2029386db2848982a48ad6d92f7f7a605394ead5117c1fecb887afe908846c305061a884cc916605a9713d
   languageName: node
   linkType: hard
 
@@ -1374,15 +1374,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/mcp@npm:0.6.1":
-  version: 0.6.1
-  resolution: "@storybook/mcp@npm:0.6.1"
+"@storybook/mcp@npm:0.6.2":
+  version: 0.6.2
+  resolution: "@storybook/mcp@npm:0.6.2"
   dependencies:
-    "@tmcp/adapter-valibot": "npm:^0.1.4"
-    "@tmcp/transport-http": "npm:^0.8.0"
-    tmcp: "npm:^1.16.0"
+    "@tmcp/adapter-valibot": "npm:^0.1.5"
+    "@tmcp/transport-http": "npm:^0.8.5"
+    tmcp: "npm:^1.19.3"
     valibot: "npm:1.2.0"
-  checksum: 10c0/3b6f7fb5451db68a9d77dec61a6e765dd25d2a6358ef886d37049b8e8fcd76af21c988f1c13f8b1a35411476ad083783e3c5d9beb394c33c40cb61f1ea60a128
+  checksum: 10c0/c6025d323e790dc409e2f0204f0bd2dbf68fa4848429170a470f05047d0b662ed366062cc067aec35501986c91b8b27912d76f83e13e29ed3164906c70735a70
   languageName: node
   linkType: hard
 
@@ -1462,7 +1462,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tmcp/adapter-valibot@npm:^0.1.4":
+"@tmcp/adapter-valibot@npm:^0.1.5":
   version: 0.1.5
   resolution: "@tmcp/adapter-valibot@npm:0.1.5"
   dependencies:
@@ -1485,7 +1485,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tmcp/transport-http@npm:^0.8.0":
+"@tmcp/transport-http@npm:^0.8.5":
   version: 0.8.5
   resolution: "@tmcp/transport-http@npm:0.8.5"
   dependencies:
@@ -2373,7 +2373,7 @@ __metadata:
     "@eslint/js": "npm:^9.13.0"
     "@storybook/addon-a11y": "npm:^10.3.3"
     "@storybook/addon-docs": "npm:^10.3.3"
-    "@storybook/addon-mcp": "npm:^0.4.2"
+    "@storybook/addon-mcp": "npm:^0.5.0"
     "@storybook/addon-onboarding": "npm:^10.3.3"
     "@storybook/addon-vitest": "npm:^10.3.3"
     "@storybook/react-vite": "npm:^10.3.3"
@@ -4499,7 +4499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tmcp@npm:^1.16.0":
+"tmcp@npm:^1.19.3":
   version: 1.19.3
   resolution: "tmcp@npm:1.19.3"
   dependencies:
