@@ -25,5 +25,12 @@ const config: StorybookConfig = {
   features: {
     componentsManifest: true,
   },
+  refs: {
+    "chromatic-published-storybook": {
+      title: "Donor",
+      url: "https://main--681d127b978cabf4002ad3a7-mhmzjiflce.staging-chromatic.com/",
+    },
+    '@generali/generali-ui': { disable: true },
+  }
 };
 export default config;
