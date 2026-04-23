@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { fn } from 'storybook/test';
+import { expect, fn } from 'storybook/test';
 
 import { Button } from './Button';
 
@@ -62,5 +62,20 @@ export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
+  },
+};
+
+export const Flaky: Story = {
+  args: {
+    label: 'Flaky Button',
+  },
+  render: (args) => {
+    const hue = Math.floor(Math.random() * 360);
+    const label = `Flaky ${Math.random().toString(36).slice(2, 8)}`;
+    return Button({
+      ...args,
+      label,
+      backgroundColor: `hsl(${hue}, 90%, 55%)`,
+    });
   },
 };
