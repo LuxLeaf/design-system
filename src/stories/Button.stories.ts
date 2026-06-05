@@ -61,21 +61,20 @@ export const Large: Story = {
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Small Button',
   },
 };
 
 export const Flaky: Story = {
-  args: {
-    label: 'Flaky Button',
-  },
+  args: { label: 'Flaky Button' },
   render: (args) => {
-    const hue = Math.floor(Math.random() * 360);
-    const label = `Flaky ${Math.random().toString(36).slice(2, 8)}`;
+    // Sub-pixel translate makes anti-aliasing differ between captures,
+    // which triggers the capture engine's retry path. Text, colors, and
+    // layout stay identical, so accessibility rules see a stable DOM.
+    const offset = Math.random();
     return Button({
       ...args,
-      label,
-      backgroundColor: `hsl(${hue}, 90%, 55%)`,
+      style: { transform: `translate(${offset}px, ${offset}px)` },
     });
   },
 };

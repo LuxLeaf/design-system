@@ -30,6 +30,14 @@ const config: StorybookConfig = {
       title: "Donor",
       url: "https://tetra.chromatic.com",
     },
+    "ip-url": {
+      title: "IP Based",
+      url: "8.8.8.8",
+    },
+    "local-url": {
+      title: "Local based",
+      url: "localhost:6006",
+    },
     '@generali/generali-ui': { disable: true },
   }
 };
