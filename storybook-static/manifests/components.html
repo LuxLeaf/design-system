@@ -576,7 +576,7 @@
 <header>
   <div class="wrap">
     <h1>Manifest Debugger</h1>
-    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><span class="filter-pill ok" aria-disabled="true">3 components ok</span><a class="filter-pill info" data-k="infos" href="#filter-infos">2/3 infos</a><span class="filter-pill ok" aria-disabled="true">10 stories ok</span><a class="filter-pill ok" data-k="docs" href="#filter-docs">1 doc ok</a></div>
+    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><span class="filter-pill ok" aria-disabled="true">3 components ok</span><a class="filter-pill info" data-k="infos" href="#filter-infos">2/3 infos</a><span class="filter-pill ok" aria-disabled="true">11 stories ok</span><a class="filter-pill ok" data-k="docs" href="#filter-docs">1 doc ok</a></div>
   </div>
 </header>
 <main>
@@ -606,7 +606,7 @@
       <div class="badges">
         <label for="c-0-example-button-props" class="badge ok as-toggle">5 prop types</label>
         
-        <label for="c-0-example-button-stories" class="badge ok as-toggle">6 stories</label>
+        <label for="c-0-example-button-stories" class="badge ok as-toggle">7 stories</label>
         
       </div>
     </div>
@@ -726,7 +726,25 @@ size?: &#39;small&#39; | &#39;medium&#39; | &#39;large&#39; = &#39;medium&#39;</
               </div>
               
               
-              <pre><code>const Small = () =&gt; &lt;Button onClick={fn()} size=&quot;small&quot; label=&quot;Button&quot; /&gt;;</code></pre>
+              <pre><code>const Small = () =&gt; &lt;Button onClick={fn()} size=&quot;small&quot; label=&quot;Small Button&quot; /&gt;;</code></pre>
+            </div>
+            <div class="note ok">
+              <div class="row">
+                <span class="ex-name">Flaky</span>
+                <span class="badge ok">story ok</span>
+              </div>
+              
+              
+              <pre><code>const Flaky = (args) =&gt; {
+  // Sub-pixel translate makes anti-aliasing differ between captures,
+  // which triggers the capture engine&#39;s retry path. Text, colors, and
+  // layout stay identical, so accessibility rules see a stable DOM.
+  const offset = Math.random();
+  return Button({
+    ...args,
+    style: { transform: `translate(${offset}px, ${offset}px)` },
+  });
+};</code></pre>
             </div>
         </div>
     
