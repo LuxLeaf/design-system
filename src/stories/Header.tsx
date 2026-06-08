@@ -50,7 +50,6 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
-        <></>
       </div>
     </div>
   </header>
