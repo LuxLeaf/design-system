@@ -53,5 +53,3 @@ This is a non-UI change - hey diddle diddle, the cat and fiddle, the cow jumped 
 laughed to see such fun and the dish ran away with the spoon.
 
 ABCDEF
-
-Non visual change
