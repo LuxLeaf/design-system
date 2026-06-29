@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect, fn } from 'storybook/test';
 
 import { Button } from './Button';
 
@@ -38,6 +38,19 @@ export const Secondary: Story = {
   },
 };
 
+export const OAuthButton: Story = {
+  args: {
+    label: 'OAuth Button',
+  },
+};
+
+export const SecondaryOAuthButton: Story = {
+  name: 'Secondary OAuth Button',
+  args: {
+    label: 'OAuth Button',
+  },
+};
+
 export const Large: Story = {
   args: {
     size: 'large',
@@ -48,6 +61,20 @@ export const Large: Story = {
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Small Button',
+  },
+};
+
+export const Flaky: Story = {
+  args: { label: 'Flaky Button' },
+  render: (args) => {
+    // Sub-pixel translate makes anti-aliasing differ between captures,
+    // which triggers the capture engine's retry path. Text, colors, and
+    // layout stay identical, so accessibility rules see a stable DOM.
+    const offset = Math.random();
+    return Button({
+      ...args,
+      style: { transform: `translate(${offset}px, ${offset}px)` },
+    });
   },
 };
