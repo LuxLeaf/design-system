@@ -69,6 +69,7 @@ export const Page: React.FC = () => {
         </div>
         <>bananas</>
         <>test</>
+        <p>Taco Bell warning label</p>
       </section>
     </article>
   );
