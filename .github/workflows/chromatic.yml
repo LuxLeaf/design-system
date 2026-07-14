@@ -1,28 +1,28 @@
-name: "Chromatic"
+# name: "Chromatic"
 
-on: push
+# on: push
 
-jobs:
-  chromatic:
-    name: Run Chromatic
-    runs-on: ubuntu-latest
-    env:
-      CHROMATIC_INDEX_URL: https://chromatic-www-pr-11553.herokuapp.com
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22.12.0
-      - name: Enable Corepack
-        run: corepack enable
-      - name: Install dependencies
-        run: yarn install --immutable
-      - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          onlyChanged: true
+# jobs:
+#   chromatic:
+#     name: Run Chromatic
+#     runs-on: ubuntu-latest
+#     env:
+#       CHROMATIC_INDEX_URL: https://chromatic-www-pr-11553.herokuapp.com
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 22.12.0
+#       - name: Enable Corepack
+#         run: corepack enable
+#       - name: Install dependencies
+#         run: yarn install --immutable
+#       - name: Run Chromatic
+#         uses: chromaui/action@latest
+#         with:
+#           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
+#           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+#           onlyChanged: true
