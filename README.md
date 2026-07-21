@@ -56,3 +56,5 @@ ABCDEF
 
 ASDF
 A non-visual change
+
+another non visual change
