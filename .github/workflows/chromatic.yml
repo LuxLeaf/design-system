@@ -6,8 +6,8 @@ jobs:
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-latest
-    # env:
-    #   CHROMATIC_INDEX_URL: https://www.staging-chromatic.com
+    env:
+      CHROMATIC_INDEX_URL: https://chromatic-www-pr-11648.herokuapp.com
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,11 +20,11 @@ jobs:
         run: corepack enable
       - name: Install dependencies
         run: yarn install --immutable
-      - name: Stub
-        run: echo 'nothing to see here'
-      # - name: Run Chromatic
-      #   uses: chromaui/action@latest
-      #   with:
-      #     # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
-      #     projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-      #     onlyChanged: true
+      # - name: Stub
+      #   run: echo 'nothing to see here'
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          onlyChanged: true
