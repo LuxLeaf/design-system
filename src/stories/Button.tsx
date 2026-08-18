@@ -34,7 +34,7 @@ export const Button = ({
       >
         {label}
       </button>
-      <p>A wild p tag appears! WOOOOOO!!!!!</p>
+      <p>A wild p tag appears!</p>
     </>
   );
 };
