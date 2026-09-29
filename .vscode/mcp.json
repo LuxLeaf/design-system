@@ -1,0 +1,13 @@
+{
+	"servers": {
+		"storybook-mcp": {
+			"url": "https://storybook.chromatic.com/mcp",
+			"type": "http"
+		},
+		"chromatic-with-mdx": {
+			"url": "https://68767c03fbbc1a5d94faff9b-oyvnqypyot.chromatic.com/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
