@@ -69,7 +69,7 @@ export const Page: React.FC = () => {
         </div>
         <>bananas</>
         <>test</>
-        <p>Boop visual change asdfasdfasdasdfasdfasdfasdfasdfasdfasdf</p>
+        <p>WEEBoop visual change asdfasdfasdasdfasdfasdfasdfasdfasdfasdf</p>
       </section>
     </article>
   );
