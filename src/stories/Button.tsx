@@ -34,7 +34,7 @@ export const Button = ({
       >
         {label}
       </button>
-      <p>A wild p tag appears!!!!!! Caterpillars are weird.</p>
+      <p>A wild p tag appears!!!!!! Caterpillars are weird but look funny in hats and tuxedos.</p>
     </>
   );
 };
