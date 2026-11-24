@@ -27,4 +27,4 @@ jobs:
         with:
           projectToken: ${{ secrets.DEV_CHROMATIC_PROJECT_TOKEN }}
           # projectToken: ${{ secrets.PROD_CHROMATIC_PROJECT_TOKEN }}
-          onlyChanged: true
+          # onlyChanged: true
