@@ -6,8 +6,8 @@ jobs:
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-latest
-    # env:
-    #   CHROMATIC_INDEX_URL: https://chromatic-www-pr-12126.herokuapp.com
+    env:
+      CHROMATIC_INDEX_URL: https://chromatic-www-pr-12574.herokuapp.com
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -25,6 +25,6 @@ jobs:
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
-          # projectToken: ${{ secrets.DEV_CHROMATIC_PROJECT_TOKEN }}
-          projectToken: ${{ secrets.PROD_CHROMATIC_PROJECT_TOKEN }}
+          projectToken: ${{ secrets.DEV_CHROMATIC_PROJECT_TOKEN }}
+          # projectToken: ${{ secrets.PROD_CHROMATIC_PROJECT_TOKEN }}
           onlyChanged: true
