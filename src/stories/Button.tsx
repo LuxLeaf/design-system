@@ -34,7 +34,7 @@ export const Button = ({
       >
         {label}
       </button>
-      <p>Hello there</p>
+      <p>Hello there - again</p>
     </>
   );
 };
